@@ -11,12 +11,13 @@ app = Flask(__name__)
 #CORS(app)
 CORS(app, resources={r"/*": {"origins": "*"}}) 
 
+
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Replace with your SMTP server address
 app.config['MAIL_PORT'] = 587  # Replace with your SMTP server port
 app.config['MAIL_USE_TLS'] = True  # Replace with True or False depending on your SMTP server
-app.config['MAIL_DEFAULT_SENDER'] = 'example@gmail.com'
-app.config['MAIL_USERNAME'] = 'exampe@gmail.com'  # Replace with your email username
-app.config['MAIL_PASSWORD'] = '16 diit code'  # Replace with your app password of gmail account
+app.config['MAIL_DEFAULT_SENDER'] = 'mohmmed201p@gmail.com'
+app.config['MAIL_USERNAME'] = 'mohmmed201p@gmail.com'  # Replace with your email username
+app.config['MAIL_PASSWORD'] = 'hene mxtb fzgg nsjd'  # Replace with your app password of gmail account
 
 mail = Mail(app)
 
